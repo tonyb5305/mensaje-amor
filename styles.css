@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(-45deg,#ff4d6d,#ff758f,#ff8fa3,#ffb3c6);
+    background-size:400% 400%;
+    animation:fondo 10s ease infinite;
+}
+
+/* Fondo animado */
+@keyframes fondo{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+/* Pantalla inicio */
+#inicio{
+    text-align:center;
+    color:white;
+}
+
+.cofre{
+    font-size:80px;
+    cursor:pointer;
+    animation:latido 1.5s infinite;
+}
+
+@keyframes latido{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.1);}
+    100%{transform:scale(1);}
+}
+
+/* Ocultar */
+.oculto{
+    display:none;
+}
+
+/* Caja mensaje */
+.caja{
+    width:450px;
+    height:250px;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(10px);
+    border-radius:25px;
+    box-shadow:0 20px 50px rgba(255,0,100,0.6);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    position:relative;
+    overflow:hidden;
+}
+
+/* Corazones */
+.corazon{
+    position:absolute;
+    bottom:-20px;
+    font-size:24px;
+    animation:flotar 6s linear infinite;
+}
+
+@keyframes flotar{
+    0%{transform:translateY(0); opacity:1;}
+    100%{transform:translateY(-400px); opacity:0;}
+}
