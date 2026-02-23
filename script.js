@@ -9,7 +9,7 @@ function abrirMensaje(){
 }
 
 function escribirTexto(){
-    let texto = "Te amo mucho preciosa ❤️";
+    let texto = "Te amo mucho preciosa eres importante para mi ❤️";
     let i = 0;
     let velocidad = 80;
 
@@ -63,4 +63,5 @@ function explosion(){
 
         setTimeout(()=>corazon.remove(),1000);
     }
+
 }
